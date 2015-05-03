@@ -1,4 +1,4 @@
-from question8 import HashTable
+from hasTable import HashTable
 
 #constructor
 def test_initEmpty():
