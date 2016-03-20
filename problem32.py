@@ -5,8 +5,7 @@ def generate(n,ls):
     if n == 1:
         print ls
     else:
-        for i in range(len(ls) - 1):
-            print i
+        for i in range(n - 1):
             generate(n-1,ls)
             if n % 2 == 0:
                 ls[i], ls[n-1] = ls[n-1], ls[i]
@@ -14,4 +13,4 @@ def generate(n,ls):
                 ls[0], ls[n-1] = ls[n-1], ls[0]
         generate(n-1, ls)
 
-generate(3,[5,6,7])
+generate(4,["A", "B", "C", "D"])
