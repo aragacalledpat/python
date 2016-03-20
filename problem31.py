@@ -36,7 +36,6 @@ def make_lists(current_list):
 def handle_list(list):
     global count
     if sum_list(list) == total:
-        print list
         count += 1
         return
     else:
